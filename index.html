@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Condition</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+  <div class="header">WEATHER CONDITION</div>
+
+  <div id="map"></div>
+
+  <div class="sidebar">
+    <h3>PARAMETERS</h3>
+    <button onclick="setLayer('temp')">Temperature</button>
+    <button onclick="setLayer('rain')">Rainfall</button>
+    <button onclick="setLayer('humidity')">Humidity</button>
+    <button onclick="setLayer('wind')">Wind Speed</button>
+    <button onclick="setLayer('cloud')">Cloud Condition</button>
+    <div id="infoBox"></div>
+  </div>
+
+  <div class="timeline">
+    <button onclick="prevTime()">◀</button>
+    <span id="timeLabel">Now</span>
+    <button onclick="nextTime()">▶</button>
+  </div>
+
+  <div class="footer">
+    <p>Prepared by:<br/>
+    <strong>Dr. Rathadeep Ray</strong><br/>
+    Asst. Prof. (Dept. of Earth Sciences and Remote Sensing)<br/>
+    JIS University, Kolkata</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

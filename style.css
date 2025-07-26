@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0b1c33;
+  color: white;
+}
+
+.header {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 15px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+#map {
+  height: 80vh;
+  width: 100%;
+  z-index: 0;
+}
+
+.sidebar {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  width: 250px;
+  background: #102040;
+  padding: 15px;
+  z-index: 1000;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.sidebar button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+#infoBox {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.timeline {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  z-index: 1000;
+}
+
+.timeline button {
+  background: yellow;
+  border: none;
+  font-size: 2rem;
+  margin: 0 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.timeline span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.footer {
+  padding: 10px;
+  text-align: right;
+  font-size: 12px;
+  color: white;
+  background: #0b1c33;
+}
